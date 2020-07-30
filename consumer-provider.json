@@ -1,0 +1,33 @@
+{
+  "consumer": {
+    "name": "Consumer"
+  },
+  "provider": {
+    "name": "Provider"
+  },
+  "interactions": [
+    {
+      "description": "a request to retrieve userA details",
+      "providerState": "userA exists in the system",
+      "request": {
+        "method": "get",
+        "path": "/users/userA"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "email": "userA@localhost",
+          "id": 42,
+          "username": "userA"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

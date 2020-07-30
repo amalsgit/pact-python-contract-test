@@ -16,7 +16,7 @@ def get_user_by_name(name):
     print(user_data)
     if not user_data:
         abort(404)
-    response = jsonify(**user_data)
+    response = jsonify(user_data)
     return response
 
 
