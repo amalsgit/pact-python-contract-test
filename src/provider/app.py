@@ -1,6 +1,6 @@
 from flask import Flask, abort, jsonify
 
-fakedb = {"admin": {"username": "admin", "email": "admin@localhost", "id": 42}}
+fakedb = {"userA": {"username": "userA", "email": "userA@localhost", "id": 42}}
 
 app = Flask(__name__)
 
